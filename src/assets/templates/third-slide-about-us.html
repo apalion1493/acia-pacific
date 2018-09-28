@@ -1,0 +1,29 @@
+<div class="no-templates-section section fp-auto-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Мы не продаем шаблоны</h2>
+            </div>
+            <div class="col-lg-9 no-templates-section__container">
+                <p>Тот самый индивидуальный подход к клиенту. Мы проводим брифинги, исследуем рынок конкретной отрасли и даем общую аналитику. Таким образом, уже на этапе обращения Вы получаете объективную оценку масштабируемости Вашего Бизнеса, которая позволит принять правильное решение.	</p>
+                <p>Мы так же, как и Вы, в равной степени нацелены на результ, поэтому выстраиваем рабочий процесс таким образом, чтобы он был прежде всего максимально прозрачен и понятен для Вас. </p>
+                <a class="link-form-acquaintance" href="#form">Давайте знакомиться</a>
+            </div>
+            <div class="growth-chart-img"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.link-form-acquaintance').on( 'click', function(){
+        var el = $(this);
+        var dest = el.attr('href'); // получаем направление
+        if(dest !== undefined && dest !== '') { // проверяем существование
+            $('html,body').animate({
+                    scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+                }, 1500 // скорость прокрутки
+            );
+        }
+        return false;
+    });
+</script>
